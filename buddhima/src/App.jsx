@@ -87,7 +87,7 @@ function App() {
             <Navbar />
             <main className="h-screen">
               <Routes>
-                <Route path="/" element={<MainPortfolio />} />
+                <Route path="/Lakmal.C.Buddhima" element={<MainPortfolio />} />
                 <Route path="/vision-m-tech" element={<VisionMTech />} />
                 <Route path="/vision-creative" element={<VisionCreative />} />
                 <Route
