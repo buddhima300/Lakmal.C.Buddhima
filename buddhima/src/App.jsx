@@ -1,14 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import { Navbar } from "./components/Navbar";
-import { Hero } from "./components/Hero";
-import { About } from "./components/About";
-import { Skills } from "./components/Skills";
-import { Experience } from "./components/Experience";
-import { Projects } from "./components/Projects";
-import { Education } from "./components/Education";
-import { Testimonials } from "./components/Testimonials";
-import { Contact } from "lucide-react";
 import { Footer } from "./components/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { VisionMTech } from "./pages/VisionMTech/Index";
@@ -93,7 +85,7 @@ function App() {
           </div>
           <div className="relative z-10">
             <Navbar />
-            <main>
+            <main className="h-screen">
               <Routes>
                 <Route path="/" element={<MainPortfolio />} />
                 <Route path="/vision-m-tech" element={<VisionMTech />} />
@@ -104,7 +96,7 @@ function App() {
                 />
               </Routes>
             </main>
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </div>
       </BrowserRouter>

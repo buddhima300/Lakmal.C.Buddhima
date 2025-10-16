@@ -24,18 +24,18 @@ export const Navbar = () => {
       name: "Dev Portfolio",
       path: "/",
     },
-    {
-      name: "Vision M Tech",
-      path: "/vision-m-tech",
-    },
-    {
-      name: "Vision Creative",
-      path: "/vision-creative",
-    },
-    {
-      name: "Vision Assignment",
-      path: "/vision-assignment",
-    },
+    // {
+    //   name: "Vision M Tech",
+    //   path: "/vision-m-tech",
+    // },
+    // {
+    //   name: "Vision Creative",
+    //   path: "/vision-creative",
+    // },
+    // {
+    //   name: "Vision Assignment",
+    //   path: "/vision-assignment",
+    // },
   ];
 
   const handleDownload = () => {
@@ -47,6 +47,7 @@ export const Navbar = () => {
     link.click();
     document.body.removeChild(link); // Clean up
   };
+
   return (
     <motion.header
       initial={{
