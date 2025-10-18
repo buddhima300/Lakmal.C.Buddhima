@@ -68,7 +68,7 @@ export const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-2">
+        <Link to="/Lakmal.C.Buddhima" className="flex items-center gap-2">
           <div className="h-10 w-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
             <span className="font-bold text-lg">LKC</span>
           </div>
@@ -155,7 +155,6 @@ export const Navbar = () => {
               </Link>
             ))}
             <Link
-              to="/contact"
               className="bg-gradient-to-r from-blue-500 to-purple-600 px-4 py-2 rounded-lg font-medium hover:shadow-lg hover:shadow-blue-500/20 transition-all text-center"
               onClick={() => setMobileMenuOpen(false)}
             >

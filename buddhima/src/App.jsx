@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import { Navbar } from "./components/Navbar";
-import { Footer } from "./components/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { VisionMTech } from "./pages/VisionMTech/Index";
 import { MainPortfolio } from "./pages/MainPortfolio/Index";
 import { VisionCreative } from "./pages/VisionCreative/Index";
 import { VisionAssignment } from "./pages/VisionAssignment/Index";
+import Aurora from "./components/UI/Aurora";
+import LaserFlow from "./components/UI/LaserFlow";
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -36,6 +37,13 @@ function App() {
     <>
       <BrowserRouter>
         <div className="background-img min-h-screen w-full text-white overflow-x-hidden">
+          {/* <Aurora
+            colorStops={["#3A29FF", "#65288b", "#b19eef"]}
+            blend={0.9}
+            amplitude={3.0}
+            speed={0.2}
+          /> */}
+
           {/* Modern animated background */}
           <div
             className="fixed inset-0 mask-t-from-50% mask-t-to-90%  bg-[url('https://images.unsplash.com/photo-1582161139673-69b83f1062fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1MXx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center opacity-100 pointer-events-none"
@@ -85,7 +93,7 @@ function App() {
           </div>
           <div className="relative z-10">
             <Navbar />
-            <main className="h-screen">
+            <main>
               <Routes>
                 <Route path="/Lakmal.C.Buddhima" element={<MainPortfolio />} />
                 <Route path="/vision-m-tech" element={<VisionMTech />} />

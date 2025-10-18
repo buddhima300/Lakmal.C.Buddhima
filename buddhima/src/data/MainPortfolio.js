@@ -1,26 +1,73 @@
+export const educations = [
+  {
+    course: "BSc (Hons) in Information Technology",
+    institute: "Horizon Campus",
+    period: "October 2021 – October 2025",
+    logo: "https://horizoncampus.edu.lk/horizon_stu_reg/images/Campus%20Logo.png",
+    description: "current GPA-3.48",
+    courseworks: [
+      "Web Development",
+      "Computer Animations",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Mobile App development",
+      "Information Assurance and Network Security",
+      "Cloud Computing",
+      "Computer Networks",
+    ],
+  },
+  {
+    course: "Dip. in Information Technology",
+    institute: "Esoft Metro Campus",
+    period: "2020 – 2021",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/8/83/ESOFT_Logo_1000_x_450_RGB.jpg",
+    description: "Successfully completed with highest grades",
+    courseworks: ["C# Programmming", "Graphic Designing", "Python"],
+  },
+  {
+    course: "Dip. in General English",
+    institute: "Esoft Metro Campus",
+    period: "2020 – 2021",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/8/83/ESOFT_Logo_1000_x_450_RGB.jpg",
+    description: "Successfully completed with highest grades",
+    courseworks: ["Speaking", "Wrtiting", "Reading"],
+  },
+];
 export const experiences = [
   {
-    title: "Full Stack Developer - Intern",
-    company: "SLTMobitel HQ",
-    period: "2025 - Present",
+    title: "Full Stack Developer Intern",
+    company: "Sri Lanka Telecom PLC",
+    period: "April 2025 – October 2025",
     description:
-      "Leading development of scalable web applications, optimizing performance and mentoring junior developers. Implemented Bespoke Software Solutions to meet client requirements. Through out the project, I was able to learn the following React.js, React Native, FastAPI, Django, and Team Leadership.",
+      "During my internship at Sri Lanka Telecom PLC, Skilled in developing responsive, scalable web applications using React.js, Django, Python, and JavaScript. Served as the Frontend Lead for the Sales Incentive Automation project, demonstrating strong teamwork, leadership, and communication skills while collaborating with cross-functional teams under the Agile Scrum methodology. Highly adaptable and self-motivated, with a strong passion for learning emerging technologies and contributing to innovative software solutions. Seeking a Trainee or Junior Full Stack Developer role to apply technical expertise and grow within a dynamic development team.",
     skills: [
-      "MERN STACK",
+      "React.js",
+      "Python & Django REST APIs",
+      "Node.js / Express.js",
+      "PostgreSQL",
       "UI/UX Designing",
       "FastAPI",
-      "Django",
-      "Team Leadership",
+      "Git & GitHub",
+      "Agile & Scrum Practices",
     ],
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4VWKDDuPhmYyi1H7En1HTYjvI5hb6IUJi1A&s",
   },
   {
-    title: "Freelancing - Web Developer",
+    title: "Freelancing — Web Developer",
     company: "Vision M Tech Solutions",
     period: "2022 - present",
     description:
-      "Develop client real world business ideas into Reality with the help of Full Stack Web Development.",
-    skills: ["C#", "MySQL", "REST APIs", "Agile", "Testing"],
+      "At Vision M Tech Solutions, I have been working as a Freelance Web Developer since 2022, helping clients transform their real-world business ideas into digital reality through full-stack web development. My role involves collaborating closely with clients to gather requirements, design user-centered interfaces, and deliver scalable web applications using technologies such as React.js, Node.js, Express.js, and MongoDB. I focus on creating responsive, high-performance frontends with HTML5, CSS3, and Tailwind CSS, while ensuring secure backend integration through RESTful APIs and authentication systems like JWT and OAuth. I also handle deployment and hosting using AWS, Vercel, and Netlify, maintaining seamless performance and uptime. Over time, I’ve successfully delivered projects across multiple domains — including educational platforms, business dashboards, and service management systems — while maintaining long-term client relationships through reliable technical support, continuous updates, and performance optimization.",
+    skills: [
+      "C#",
+      "MySQL",
+      "React.js",
+      "Node.js",
+      "MongoDB",
+      "Bootstrap",
+      "Tailwind Css",
+      "CMS Web Development",
+    ],
     logo: "https://cdn.dribbble.com/userupload/22274999/file/original-c750dd14abc45c68ff30aaaa960f859e.jpg?resize=752x&vertical=center",
   },
   {
@@ -118,7 +165,7 @@ export const projects = [
       "POS system that allows users to manage students enrollment in the academy.this is utilized visual studio and c# as the programming language for seamless operations. ",
     image: SkillPos,
     technologies: ["Visual Studio", "C#", "MySQL"],
-    demoLink: "https://kodalink.se/",
+    demoLink: "#",
     githubLink: "#",
   },
   {
@@ -222,5 +269,89 @@ export const projects = [
     technologies: ["Netbeans", "Java SE 11", "MySQL", "JDBC", "Java Swing UI"],
     demoLink: "#",
     githubLink: "#",
+  },
+];
+
+import computerVision from "../assets/certificates/Computer_Vision.png";
+import FeatureEngineering from "../assets/certificates/BUDDHIMA CHATHURANGA - Feature Engineering.png";
+import DeepLearing from "../assets/certificates/BUDDHIMA CHATHURANGA - Intro to Deep Learning.png";
+import SQL from "../assets/certificates/BUDDHIMA CHATHURANGA - Intro to SQL.png";
+
+export const certifications = [
+  {
+    title: "Computer Vision",
+    organization: "Kaggle",
+    date: "Issued: August 2024",
+    image: computerVision,
+    credentialUrl:
+      "https://www.kaggle.com/learn/certification/buddhimachathuranga/computer-vision",
+  },
+  {
+    title: "Feature Engineering",
+    organization: "Kaggle",
+    date: "Issued: June 2024",
+    image: FeatureEngineering,
+    credentialUrl:
+      "https://www.kaggle.com/learn/certification/buddhimachathuranga/feature-engineering",
+  },
+  {
+    title: "Intro to Deep Learning",
+    organization: "Kaggle",
+    date: "Issued: July 2024",
+    image: DeepLearing,
+    credentialUrl:
+      "https://www.kaggle.com/learn/certification/buddhimachathuranga/intro-to-deep-learning",
+  },
+  // {
+  //   title: "Intro to SQL",
+  //   organization: "Kaggle",
+  //   date: "Issued: June 2024",
+  //   image: SQL,
+  //   credentialUrl: "https://coursera.org/verify/google-ux-cert",
+  // },
+];
+import debaters from "../assets/award ceremony.jpg";
+import sessions from "../assets/sessions.png";
+export const achievements = [
+  {
+    title: "Sub-Editor and Technical Coordinator",
+    organization: "Debaters club-Horizon Campus",
+    date: " August 2024",
+    image: debaters,
+    credentialUrl: "https://example.com/award-details",
+  },
+  {
+    title: "Tech Mentor and Code reviewer",
+    organization: "Vision Tech Solutions",
+    date: " present",
+    image: sessions,
+    credentialUrl: "https://example.com/hackx-certificate",
+  },
+];
+
+export const sports = [
+  {
+    title: "Football Team Captain",
+    organization: "Horizon Campus Sports Club",
+    date: "From: 2022 – Present",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer%29.png",
+    credentialUrl: "https://example.com/football-achievements",
+  },
+  {
+    title: "Inter-University Cricket Champion",
+    organization: "University Sports Council",
+    date: "Issued: July 2023",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/f/fd/Cricket_ball.svg",
+    credentialUrl: "https://example.com/cricket-tournament",
+  },
+  {
+    title: "Marathon Finisher (10K)",
+    organization: "Colombo City Run",
+    date: "Issued: January 2024",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/3/3d/Running_icon_-_Noun_Project_18328.svg",
+    credentialUrl: "https://example.com/marathon",
   },
 ];

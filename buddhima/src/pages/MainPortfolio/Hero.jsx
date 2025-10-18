@@ -8,6 +8,8 @@ import {
   MailIcon,
 } from "lucide-react";
 import { GlassCard, GlassButton } from "../../components/UI/GlassCard";
+import ProfileCard from "../../components/UI/ProfileCard";
+import profileImage from "../../assets/profile_new.png";
 export const Hero = () => {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -172,34 +174,28 @@ export const Hero = () => {
                 duration: 0.5,
               }}
             >
-              <ShinyText
-                text="Hello, I'm Buddhima Chathuranga Lakmal"
-                disabled={false}
-                speed={3}
-                className="custom-class text-5xl mb-12 font-bold"
-              />
               <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6"></div>
-              <p className="text-xl md:text-2xl text-white/80 mb-8 uppercase ">
-                MERN Stack Developer with 1 year of experience
+              <p className="text-xl md:text-2xl text-white/80 mb-8 uppercase font-semibold">
+                Junior Full-Stack Developer
               </p>
-              <p className="text-lg text-white/50 mb-8 leading-relaxed">
-                I am a full-stack developer and emerging UI/UX designer with a
-                passion for building scalable, user-centric, and secure digital
-                solutions. My expertise spans across the MERN stack, React
-                Native, and Node.js ecosystems, with hands-on experience in REST
-                APIs, authentication flows, role-based access control (RBAC),
-                and file management systems. Beyond development, I explore
-                data-driven applications such as customer segmentation models
-                and recommendation engines, blending machine learning workflows
-                with practical system design. My projects also integrate
-                advanced concepts like encryption/decryption mechanisms,
-                document processing with OCR (Tesseract.js), and real-time
-                location tracking, showcasing an ability to align innovation
-                with functionality.
-              </p>
+              <div className="flex justify-center">
+                <ProfileCard
+                  name="LKC.BUDDHIMA"
+                  title="Software Engineer"
+                  handle="MERN STACK"
+                  status="Online"
+                  contactText="Contact Me"
+                  avatarUrl={profileImage}
+                  showUserInfo={true}
+                  enableTilt={true}
+                  enableMobileTilt={false}
+                  onContactClick={() => console.log("Contact clicked")}
+                />
+              </div>
+
               <div className="flex justify-center gap-4 mb-8">
                 <motion.a
-                  href="#"
+                  href="https://github.com/buddhima300"
                   whileHover={{
                     y: -5,
                   }}
@@ -208,7 +204,7 @@ export const Hero = () => {
                   <GithubIcon size={24} />
                 </motion.a>
                 <motion.a
-                  href="#"
+                  href="https://www.linkedin.com/in/lbc10-buddhima/"
                   whileHover={{
                     y: -5,
                   }}
@@ -217,7 +213,7 @@ export const Hero = () => {
                   <LinkedinIcon size={24} />
                 </motion.a>
                 <motion.a
-                  href="mailto:contact@example.com"
+                  href="mailto:lkc.buddhima@gmail.com"
                   whileHover={{
                     y: -5,
                   }}

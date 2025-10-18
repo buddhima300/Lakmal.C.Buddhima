@@ -9,7 +9,8 @@ import {
   Focus,
 } from "lucide-react";
 import { GlassCard } from "../../components/UI/GlassCard";
-import profilePic from "../../assets/profile3.png";
+import profilePic from "../../assets/profile_new.jpg";
+import SkillsStatistics from "./SkillsStatistics";
 export const About = () => {
   return (
     <section id="about" className="py-20 relative">
@@ -55,7 +56,7 @@ export const About = () => {
                 duration: 0.6,
               }}
             >
-              <div className="w-60 h-60 rounded-full overflow-hidden border-4 border-white/10 relative z-10">
+              <div className="w-80 h-auto rounded-lg overflow-hidden border-4 border-white/10 relative z-10">
                 <img
                   src={profilePic}
                   alt="Profile"
@@ -82,8 +83,8 @@ export const About = () => {
                 delay: 0.2,
               }}
             >
-              <h3 className="text-2xl md:text-3xl font-bold mb-6">
-                Passionate Full-Stack Developer
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-indigo-500 uppercase">
+                Junior Full-Stack Developer
               </h3>
               <p className="text-white/70 mb-4 leading-relaxed">
                 I'm a dedicated software engineer with a passion for creating
@@ -159,6 +160,7 @@ export const About = () => {
                   </p>
                 </div>
               </div>
+              <SkillsStatistics />
             </motion.div>
           </div>
         </GlassCard>
